@@ -4,13 +4,19 @@ st.set_page_config(
     page_title="Coastal Hazard Transfer Functions  Project", page_icon=" 🌊",layout="wide" )
 
 
+## https://tsunamitransferfunctionstest.streamlit.app/
+
 st.title("Hazard Curves Model's Results")
 
-#experiments=['MLP_with_anchor_input',
-#            'MLP_without_anchor_input',
-#            'with_anchor_input',
-#            'without_anchor_input']
-       
+
+description={'MLP_with_anchor_input': 'Multilayer perceptron with an onshore hazard curve as input',
+             'MLP_without_anchor_input': 'Multilayer perceptron',
+             'VAE_with_anchor_input': 'Variational Autoencoder with an onshore hazard curve as input',
+             'VAE_without_anchor_input': 'Variational Autoencoder',
+             'Enc_with_anchor_input': 'Neural Network Operator with an onshore hazard curve as input',
+             'Enc_without_anchor_input': 'Neural Network Operator'
+             }
+
 # path to the experiments
 path = os.path.abspath(os.path.dirname(__file__))
 folds = [name for name in os.listdir(path) if os.path.isdir(name)]
