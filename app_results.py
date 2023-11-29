@@ -22,7 +22,7 @@ description={Ms[0]: 'Multilayer perceptron with an onshore hazard curve as input
              }
 
 equation={Ms[0]: r'''\textbf{h}=\mathcal{F}(\textbf{Ho},So,s,h_{975} ;\Theta)''',
-             Ms[1]: r'''\textbf{h}=\mathcal{F}(\textbf{Ho},So,s, ;\Theta)''',
+             Ms[1]: r'''\textbf{h}=\mathcal{F}(\textbf{Ho},So,s ;\Theta)''',
              Ms[2]: r'''\mathcal{N}(\mu,\,\sigma^{2}) = \mathcal{E}(Ho,So,s,h_{975};\Theta) \\ \textbf{h}=\mathcal{D}(\mathcal{N} (\mu,\,\sigma^{2}) ;\Theta)''',
              Ms[3]: r'''\mathcal{N}(\mu,\,\sigma^{2}) = \mathcal{E}(Ho,So,s;\Theta) \\ \textbf{h}=\mathcal{D}(\mathcal{N} (\mu,\,\sigma^{2}) ;\Theta)''',
              Ms[4]: r'''\mathcal{T} = \mathcal{F}(So,s,h_5 ;\Theta) \\ \textbf{h} = \mathcal{T} \odot Ho''',
